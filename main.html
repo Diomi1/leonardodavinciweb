@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo da Vinci Web | Diomarcos</title>
+    <!-- ICONO DE LA WEB -->
+    <link rel="shortcut icon" href="/img/leonardoIcon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="/cookies.css">
+    <link rel="stylesheet" href="/estilos.css">
+
+    <!-- FONT AWESOME PREMIUM -->
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+      <link rel="stylesheet"  href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/duotone.css"/>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/brands.css"/>
+
+    </head>
+<body >
+    
+    <div id="boton_2" class="contenedor_musica_boton" style="display: none;">
+      <i id="musica_boton" class="fa-solid fa-volume-high"></i>
+    </div>
+
+    <div id="cookie-banner">
+      <div class="contenedor_cookie">
+        <p class="texto_cookie">
+          Esta pagina web necesita autorizacion suya para reproducción de musica
+
+          Haga click en Aceptar
+        </p>
+        <button id="accept-cookies">Aceptar</button>
+      </div>
+    </div>
+
+    <audio id="background-music" loop>
+      <source
+        src="/img/musica/Leonardo da Vinci's Favorite Classical Music Playlist.mp4"
+        type="audio/mpeg"
+      />
+      Tu navegador no soporta la reproducción de audio.
+    </audio>
+    
+    <!-- <div id="theme_selector" class="bombilla_cambiar_tema">
+    <i id="icono_bombilla" class="fa-solid fa-lightbulb-on"></i>
+    </div> -->
+
+    <div class="container">
+        <header class="encabezado">
+            <div class="contenedor_info_header">
+                <h1 class="nombre_personaje">Leonardo Da Vinci</h1>
+                <p class="parrafo_sobre_pj">Soy Leonardo da Vinci, un apasionado explorador de las artes y las ciencias. Como pintor, inventor, ingeniero y anatomista del Renacimiento, busqué siempre comprender el mundo que me rodea a través de la observación y la curiosidad. Desde la creación de obras icónicas como La Mona Lisa y La Última Cena, hasta el diseño de máquinas voladoras y estudios anatómicos revolucionarios, mi vida ha sido un constante viaje entre la creatividad y la innovación.</p>
+            </div>
+            <div class="contenedor_imagen_header">
+                <img draggable="false" id="imagen_leonardo" class="imagen_leonardo_header" src="/img/leonardo.jpg" alt="leonardo">
+            </div>
+        </header>
+    </div>
+
+    <!-- seccion link de javascript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script type="module" src="/animaciones.js"></script>
+    <script type="module" src="/app.js"></script>
+
+
+</body>
+</html>
