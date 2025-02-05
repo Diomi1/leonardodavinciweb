@@ -66,6 +66,21 @@ gsap.utils.toArray('.contenedor_obras').forEach(obra => {
   });
 });
 
+
+gsap.utils.toArray('.parrafo_ubicacion').forEach(parrafo_ubicacion => {
+  gsap.to(parrafo_ubicacion, {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: parrafo_ubicacion,  
+      start: 'top 100%',  
+      toggleActions: 'play none none reverse' 
+    }
+  });
+});
+
+
 }
 
 
