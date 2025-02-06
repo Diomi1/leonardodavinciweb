@@ -45,6 +45,35 @@ gsap.utils.toArray('.parrafo_sobre_mi').forEach(parrafo => {
   });
 });
 
+
+gsap.from('.poema', {
+    scrollTrigger: {
+        trigger: '.poema',
+        start:"left 100%",
+        end:"right 10%",
+        toggleActions: "play none none reverse",
+        markers:false
+    },
+    duration: 1.5,
+    opacity: 0,
+    y: 100,
+});
+
+
+gsap.from('.contenedor_info_mia', {
+    scrollTrigger: {
+        trigger: '.contenedor_info_mia',
+        start:"left 100%",
+        end:"right 10%",
+        toggleActions: "play none none reverse",
+        markers:false
+    },
+    duration: 1.5,
+    opacity: 0,
+    y: 100,
+});
+
+
 gsap.from('.parrafo_ubicacion', {
     opacity: 0,
     y: 50,       

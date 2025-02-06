@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "frakiton_mono_bold";
+    src: url(/font/PPFraktionMono-Bold.otf) format(truetype);
+}
+
+@font-face {
+    font-family: "frakiton_mono_regular";
+    src: url(/font/PPFraktionMono-Regular.otf) format(truetype);
+}
+
+@font-face {
+    font-family: "frakiton_mono_regular_italic";
+    src: url(/font/PPFraktionMono-RegularItalic.otf) format(truetype);
+}
+
+@font-face {
+    font-family: "frakiton_mono_bold_italic";
+    src: url(/font/PPFraktionMono-BoldItalic.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url(/font/Onest-VariableFont_wght.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url(/font/Cinzel-VariableFont_wght.ttf) format(truetype);
+}
+
+:root {
+    /* colores */
+
+    --fondo_codigo:#28292b;
+
+    /* fuentes */
+    --fuente_frakiton_bold:"frakiton_mono_bold";
+    --fuente_frakiton_bold_italic:"frakiton_mono_bold_italic";
+    --fuente_frakiton_regular:"frakiton_mono_regular";
+    --fuente_frakiton_regular_italic:"frakiton_mono_regular_italic";
+    --fuente_cinzel:'Cinzel';
+    --fuente_onest:'Onest';
+    
+    /* Extras */
+  --background-light: #FAF9F6;
+  --text-primary: #2E2E2E;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background-light);
+    font-family: var(--fuente_onest);
+    color: var(--text-primary);
+}
+
+h1,h2,h3 {
+    font-family: var(--fuente_cinzel);
+}
+
+.contenedor {
+    margin: 30px;
+}
+
+.nombre_personaje {
+  font-size: 60px;
+  font-family: var(--fuente_cinzel);
+}
+
+.parrafo_sobre_pj {
+  max-width: 900px;
+  font-size: 18px;
+}
+.encabezado {
+  display: flex;
+}
+
+.contenedor_info_header, .contenedor_imagen_header {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+}
+
+.contenedor_imagen_header {
+  align-items: flex-start; /* Esto alinea la imagen a la derecha */
+  overflow: hidden;
+}
+
+.imagen_leonardo_header {
+  width: 700px;
+  height: 700px;
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  object-fit: contain;
+}
+
+.contenedor_poema {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 350px;
+    font-size: 25px;
+}
+
+.poema {
+    max-width: 1000px;
+    margin-top: 50px;
+}
+
+.contenedor_info_mia {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.diomarcos_foto_1 {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contenedor_codigo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 350px;
+}
+
+.titulo_seccion {
+    font-size: 30px;
+}
+
+.contenedor_primer_codigo {
+    display: inline-block;
+}
+
+.parentesis,.coma {
+    color: rgb(199, 146, 234);
+}
+
+.string {
+    color: rgb(99, 213, 90);
+}
+
+.funcion {
+    color: rgb(130, 170, 255);
+}
+
+.boleano {
+    color: rgb(255, 88, 116);
+}
+
+.formato_variable {
+    font-style: italic;
+}
+
+#codigo {
+    font-family: var(--fuente_frakiton_bold);
+    font-weight:100;
+    background: var(--fondo_codigo);
+    color: rgb(191, 199, 213);
+    white-space: pre-wrap;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    height: auto;
+}
+
+
+
+
+@media (max-width:1476px) {
+    .imagen_leonardo_header {
+        height: 550px;
+        width: 550px;
+    }
+}
+
+@media (max-width:1178px) {
+    .imagen_leonardo_header {
+        height: 400px;
+        width: 400px;
+    }
+}
+@media (max-width:878px) {
+    .contenedor_info_header {
+        width: 100%;
+    }
+    .contenedor_imagen_header {
+        display: none;
+    }
+}
+
+.parrafo_codigo{
+    text-align: center;
+    max-width: 700px;
+    font-size: 23px;
+    margin-top: 50px;
+}

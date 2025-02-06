@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codigo web leonardo da vinci</title>
+    <link rel="shortcut icon" href="/img/leonardoIcon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/codigo.css">
+
+    <!-- FONT AWESOME PREMIUM -->
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+      <link rel="stylesheet"  href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/duotone.css"/>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/brands.css"/>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="encabezado">
+        
+            <div class="contenedor_imagen_header">
+            <img draggable="false" id="imagen_leonardo" class="imagen_leonardo_header" src="/img/mifoto1.png" alt="leonardo">
+        </div>
+            <div class="contenedor_info_header">
+            <h1 class="nombre_personaje">Como esto fue posible?</h1>
+            <p class="parrafo_sobre_pj">Esta no es solo una página para explicar código. Es el resultado de horas desafiando lo establecido, rompiendo las reglas del diseño convencional y transformando líneas de código en una forma de arte. Mientras otros siguen patrones predecibles, aquí decidimos crear algo que no solo funcione, sino que sienta. Esta web, dedicada a Leonardo da Vinci, no es un simple homenaje: es una fusión entre el espíritu revolucionario del Renacimiento y la libertad creativa que la tecnología permite hoy. Porque construir una página no es solo un proceso técnico; es una declaración.</p>
+                
+        </div>
+        </header>
+        
+        <div class="contenedor_poema">
+            <h2><i class="fa-solid fa-feather-pointed"></i> Reflexion</h2>
+            <p class="poema">"Todo lo que imaginas se puede programar, todo lo que imaginas se puede crear, y todo lo que imaginas se puede lograr, siempre que tengas la disciplina necesaria para hacerlo realidad."</p>
+            
+            <div class="contenedor_info_mia">
+            <img class="diomarcos_foto_1" src="/img/mifoto2.jpg" alt="foto diomarcos">
+            <p>Diomarcos D. Montalvo</p>
+            </div>
+        </div>
+
+        <div class="contenedor_codigo">
+
+            <div class="contenedor_primer_codigo">
+            <div id="codigo">
+<span class="formato_variable">const</span> boton2 = document.getElementById<span class="parentesis">(</span><span class="string">"boton_2"</span><span class="parentesis">)</span>;
+<span class="formato_variable">const</span> musicaBoton = document.getElementById<span class="parentesis">(</span><span class="string">"musica_boton"</span><span class="parentesis">)</span>;
+<span class="formato_variable">const</span> backgroundMusic = document.getElementById<span class="parentesis">(</span><span class="string">"background-music"</span><span class="parentesis">)</span>;
+<span class="formato_variable">let</span> isPlaying = <span class="boleano">true</span>; 
+
+boton2.<span class="funcion">addEventListener</span><span class="parentesis">(</span><span class="string">"click"</span>, <span class="parentesis">(</span><span class="parentesis">)</span> => {
+  if <span class="parentesis">(</span>isPlaying<span class="parentesis">)</span> {
+
+    backgroundMusic.<span class="funcion">pause</span><span class="parentesis">(</span><span class="parentesis">)</span>;
+    isPlaying = <span class="boleano">false</span>;
+    musicaBoton.classList.<span class="funcion">remove</span><span class="parentesis">(</span><span class="string">"fa-volume-high"</span><span class="parentesis">)</span>;
+    musicaBoton.classList.<span class="funcion">add</span><span class="parentesis">(</span><span class="string">"fa-volume-off"</span><span class="parentesis">)</span>;
+  } else {
+
+    backgroundMusic.<span class="funcion">play</span><span class="parentesis">(</span><span class="parentesis">)</span>;
+    isPlaying = <span class="boleano">true</span>;
+    musicaBoton.classList.<span class="funcion">remove</span><span class="parentesis">(</span><span class="string">"fa-volume-off"</span><span class="parentesis">)</span>;
+    musicaBoton.classList.<span class="funcion">add</span><span class="parentesis">(</span><span class="string">"fa-volume-high"</span><span class="parentesis">)</span>;
+  }
+<span class="parentesis">}</span><span class="parentesis">)</span>;
+
+
+    </div>
+        
+        </div>
+            <p class="parrafo_codigo">Este es parte del codigo para poder ejecutar la musica en tu navegador preferido, Utilizando el lenguaje JavaScript</p>
+        </div>
+
+    </div>
+
+
+    <!-- gsap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+
+    <script type="module" src="/js/animaciones.js"></script>
+    <script type="module" src="/js/scriptcodigo.js"></script>
+</body>
+</html>

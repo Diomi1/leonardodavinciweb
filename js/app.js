@@ -15,4 +15,3 @@ acceptButton.addEventListener("click", () => {
     animaciones()
   boton2.style.display = "flex";
 });
-
